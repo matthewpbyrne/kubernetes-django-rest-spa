@@ -1,5 +1,6 @@
 
 NodeJS-Sample-App/
+node_modules/
 docker-node/
 
 .tmp
