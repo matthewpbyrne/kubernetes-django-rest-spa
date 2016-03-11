@@ -1,6 +1,7 @@
+node_modules/
+venv/
 
 NodeJS-Sample-App/
-node_modules/
 docker-node/
 
 .tmp
