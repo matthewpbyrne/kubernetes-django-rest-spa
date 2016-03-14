@@ -1,6 +1,7 @@
 node_modules/
 venv/
 
+angular-gulp-test/
 NodeJS-Sample-App/
 docker-angular/
 docker-node/
