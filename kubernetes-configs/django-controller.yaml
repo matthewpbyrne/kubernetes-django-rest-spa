@@ -30,4 +30,4 @@ spec:
             value: a_user
           ports:
             - containerPort: 80
-              name":"http-server"
+              name: "http-server"
