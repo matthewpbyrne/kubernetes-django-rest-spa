@@ -29,5 +29,5 @@ spec:
           - name: DB_USER
             value: a_user
           ports:
-            - containerPort: 80
+            - containerPort: 8080
               name: "http-server"

@@ -9,5 +9,5 @@ spec:
     - protocol: TCP
       nodePort: 30100
       port: 4000
-      targetPort: 8080
+      targetPort: "http-server"
   type: LoadBalancer
