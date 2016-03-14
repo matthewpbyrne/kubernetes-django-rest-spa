@@ -18,7 +18,7 @@ spec:
           - name: POSTGRES_USER
             value: 'a_user'
           - name: POSTGRES_PASSWORD
-            value 'a_password'
+            value: 'a_password'
         ports:
         - name: postgres
           containerPort: 5432
