@@ -2,6 +2,7 @@ node_modules/
 venv/
 
 NodeJS-Sample-App/
+docker-angular/
 docker-node/
 
 .tmp
