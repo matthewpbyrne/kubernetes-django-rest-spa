@@ -22,6 +22,8 @@ spec:
           env:
           - name: GET_HOSTS_FROM
             value: dns
+          - name: DB_HOST
+          value: postgres
           - name: DB_NAME
             value: a_database
           - name: DB_PASSWORD
