@@ -1,0 +1,13 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: django-service
+spec:
+  selector:
+    name: django
+  ports:
+    - protocol: TCP
+      nodePort: 30100
+      port: 4000
+      targetPort: 8080
+  type: LoadBalancer

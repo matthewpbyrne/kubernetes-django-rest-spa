@@ -1,0 +1,33 @@
+apiVersion: v1
+kind: ReplicationController
+metadata:
+  labels:
+    name: django
+  name: django-controller
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        name: django
+    spec:
+      containers:
+        - name: django
+          image: matthewpbyrne/docker-django-rest
+          command: ["python", "manage.py", "runserver"]
+          resources:
+            requests:
+              cpu: 100m
+              memory: 100Mi
+          env:
+          - name: GET_HOSTS_FROM
+            value: dns
+          - name: DB_NAME
+            value: a_database
+          - name: DB_PASSWORD
+            value: a_password
+          - name: DB_USER
+            value: a_user
+          ports:
+            - containerPort: 80
+              name":"http-server"
