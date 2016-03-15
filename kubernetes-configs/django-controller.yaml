@@ -14,7 +14,7 @@ spec:
       containers:
         - name: django
           image: matthewpbyrne/docker-django-rest
-          command: ["python", "manage.py", "runserver"]
+          command: ["python", "manage.py", "runserver", "0.0.0.0:9000"]
           resources:
             requests:
               cpu: 100m
