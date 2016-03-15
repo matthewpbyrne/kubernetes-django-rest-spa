@@ -40,7 +40,8 @@ angular
   .module('myAppApp')
   .factory('MyRestangular', function($base64, Restangular) {
 
-      var encoded = $base64.encode("matthewbyrne:password16");
+      // var encoded = $base64.encode("matthewbyrne:password16");
+      var encoded = $base64.encode("superman2:superman2");
 
       return Restangular.withConfig(function(RestangularConfigurer) {
           function listExtractor(data, operation, what, url, response, deferred) {

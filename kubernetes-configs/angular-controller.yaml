@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: ReplicationController
+metadata:
+  labels:
+    name: angular
+  name: angular-controller
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        name: angular
+    spec:
+      containers:
+        - name: angular
+          image: matthewpbyrne/angular-proof
+          command: ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
+          ports:
+          - containerPort: 80
+            name: "http-server"
