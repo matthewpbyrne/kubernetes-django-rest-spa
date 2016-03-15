@@ -35,7 +35,6 @@ CORS_ALLOW_HEADERS = (
     'accept',
     'origin',
     'authorization',
-    'u',
     'x-csrftoken',
     'x-devtools-emulate-network-conditions-client-id',
     'x-firephp-version'
@@ -51,7 +50,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'corsheaders'
+    'corsheaders',
 ]
 
 MIDDLEWARE_CLASSES = [
