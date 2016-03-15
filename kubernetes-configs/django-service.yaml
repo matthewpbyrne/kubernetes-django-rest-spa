@@ -7,6 +7,6 @@ spec:
     name: django
   ports:
   - protocol: TCP
-    port: 8000
+    port: 9000
     targetPort: "http-server"
   type: LoadBalancer
