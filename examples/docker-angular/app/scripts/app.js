@@ -53,9 +53,9 @@ angular
               return extractedData;
           }
 
-          var baseUrl = "http://192.168.99.100";
-          // var baseUrl = "52.31.87.146";
-          RestangularConfigurer.setBaseUrl(baseUrl + ':9000');
+          // var baseUrl = "http://192.168.99.100";
+          var baseUrl = "http://52.31.87.146";
+          RestangularConfigurer.setBaseUrl(baseUrl + ':31000');
           RestangularConfigurer.setDefaultHeaders({ Authorization: 'Basic ' + encoded });
           RestangularConfigurer.addResponseInterceptor(listExtractor);
       });
