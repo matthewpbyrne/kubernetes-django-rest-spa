@@ -1,7 +1,7 @@
 kind: PersistentVolumeClaim
 apiVersion: v1
 metadata:
-  name: master-local-postgres-pvc
+  name: master-local-postgres-pvc-qa
 spec:
   accessModes:
     - ReadWriteOnce

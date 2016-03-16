@@ -1,9 +1,9 @@
 kind: PersistentVolume
 apiVersion: v1
 metadata:
-  name: master-local-postgres-pv
+  name: master-local-postgres-pv-qa
   labels:
-    type: master-local-postgres-pv
+    type: master-local-postgres-pv-qa
 spec:
   capacity:
     storage: 1Gi

@@ -32,4 +32,4 @@ spec:
             value: a_user
           ports:
           - containerPort: 9000
-            name: "http-server"
+            name: "django-server"
