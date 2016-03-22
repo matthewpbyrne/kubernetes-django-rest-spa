@@ -28,6 +28,8 @@ spec:
           value: 'false'
         - name: ENABLE_BASIC_AUTH
           value: 'false'
+        - name: TARGET_SERVICE
+          value: 10.84.107.169
         ports:
         - name: ssl-proxy-http
           containerPort: 80
