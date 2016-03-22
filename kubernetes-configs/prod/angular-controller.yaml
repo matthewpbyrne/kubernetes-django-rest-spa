@@ -17,4 +17,4 @@ spec:
           command: ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
           ports:
           - containerPort: 80
-            name: "http-server"
+            name: "angular-server"

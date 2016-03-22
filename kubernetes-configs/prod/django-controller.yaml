@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
         - name: django
-          image: matthewpbyrne/docker-django-rest
+          image: matthewpbyrne/docker-django-rest:prod
           command: ["python", "manage.py", "runserver", "0.0.0.0:9000"]
           resources:
             requests:

@@ -1,13 +1,13 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: angular-service
+  name: django-service
 spec:
   selector:
-    name: angular
+    name: django
   ports:
   - protocol: TCP
-    nodePort: 30000
     port: 80
-    targetPort: "http-server"
+    targetPort: "django-server"
+  clusterIP: 192.168.3.111
   type: LoadBalancer

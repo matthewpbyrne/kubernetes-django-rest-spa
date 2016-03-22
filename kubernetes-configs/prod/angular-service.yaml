@@ -7,7 +7,7 @@ spec:
     name: angular
   ports:
   - protocol: TCP
-    nodePort: 30001
     port: 80
     targetPort: "http-server"
+  clusterIP: 192.168.3.100
   type: LoadBalancer

@@ -1,0 +1,13 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: angular-service
+spec:
+  selector:
+    name: angular
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: "http-server"
+  clusterIP: 192.168.3.101
+  type: LoadBalancer

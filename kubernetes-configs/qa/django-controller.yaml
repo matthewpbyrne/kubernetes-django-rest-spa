@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
         - name: django
-          image: matthewpbyrne/docker-django-rest-sqlite
+          image: matthewpbyrne/docker-django-rest:qa
           command: ["python", "manage.py", "runserver", "0.0.0.0:9000"]
           resources:
             requests:
@@ -32,4 +32,4 @@ spec:
             value: a_user
           ports:
           - containerPort: 9000
-            name: "http-server"
+            name: "django-server"

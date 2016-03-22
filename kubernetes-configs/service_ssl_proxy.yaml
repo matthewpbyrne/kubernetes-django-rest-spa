@@ -7,10 +7,6 @@ metadata:
     role: ssl-proxy
 spec:
   ports:
-  - name: https
-    port: 443
-    targetPort: ssl-proxy-https
-    protocol: TCP
   - name: http
     port: 80
     targetPort: ssl-proxy-http
@@ -19,3 +15,5 @@ spec:
     name: nginx
     role: ssl-proxy
   type: LoadBalancer
+  externalIPs:
+  - 10.84.107.169
